@@ -7,7 +7,7 @@ void setup() {
  while(!Serial);
 
  Serial.println("Initializing IMU device...");
- if (!BMI160.begin(BMI160GenClass::SPI_MODE, /*SS pin# = */10))
+ if (!BMI160.begin(BMI160GenClass::SPI_MODE, /*SS pin# = */2))
  {
   Serial.println("failed");
   return;
